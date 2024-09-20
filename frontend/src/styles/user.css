@@ -1,0 +1,175 @@
+.user-info-header-image {
+    width: 200px;
+    height: 200px;
+}
+
+.user-info-header-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.user-info-section {
+    margin: 0 auto;
+    width: 65%;
+    margin-top: 1em;
+}
+
+.user-info-header {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.user-info-header-para {
+    display: flex;
+    flex-direction: column;
+    gap: .9em;
+
+}
+
+.user-info-header-para-name {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.follow-btn button {
+    margin-top: 0;
+}
+
+.user-insights-post {
+    display: flex;
+    gap: 1em;
+}
+
+.user-post-section-post {
+    width: 300px;
+    height: 300px;
+    /* display: flex; */
+}
+
+.user-post-section-post img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.user-post-section {
+    width: 65%;
+    margin: 20px auto;
+
+}
+
+.user-post-section-container {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+
+
+/* CSS for user-info-header-image */
+.user-post-section-post {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+/* CSS for caption */
+.user-post-section-post .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent black */
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+/* CSS for hovering effect */
+.user-post-section-post:hover .caption {
+    opacity: 1;
+    /* Show caption on hover */
+}
+
+.caption {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.likes-length,
+.comments-length {
+    display: flex;
+    align-items: center;
+    gap: .2em;
+}
+
+@media screen and (max-width:700px) {
+    .user-info-header-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .user-info-header-para {
+        gap: .4em;
+    }
+
+    .user-info-section {
+        width: 75%;
+    }
+
+    .user-post-section {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .user-insights-post h5 {
+        font-size: 10px;
+    }
+
+    .bio {
+        font-size: 10px;
+    }
+
+    .user-info-header-para-name h1 {
+        font-size: 20px;
+    }
+
+    .user-info-section {
+        width: 85%;
+    }
+
+    .user-post-section {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .user-info-header-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .user-post-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .user-info-header {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+}

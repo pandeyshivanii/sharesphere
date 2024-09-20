@@ -1,0 +1,274 @@
+ .user-post-container {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 2em;
+
+ }
+
+ .userinfo-post-user-img {
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+
+
+ }
+
+ .userinfo-post-user-img img {
+   height: 100%;
+   width: 100%;
+   border-radius: 50%;
+ }
+
+ .userinfo-post-user-username p {
+   font-size: 12px;
+   font-weight: bold;
+ }
+
+ .userinfo-post-post-image {
+   width: 400px;
+   height: 500px;
+ }
+
+ .userinfo-post-post-image img {
+   max-width: 100%;
+   height: 100%;
+ }
+
+ .userinfo-post {
+   display: flex;
+   flex-direction: column;
+
+   justify-content: center;
+
+   padding: 10px 20px;
+   margin-bottom: 1em;
+   background-color: rgb(21, 21, 21);
+   border-radius: 10px;
+
+
+ }
+
+ .userinfo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 1.2em;
+
+ }
+
+ .userinfo-post-user {
+   display: flex;
+   gap: .5em;
+   align-items: center;
+   margin-bottom: 0.5em;
+ }
+
+ .post-like {
+   display: flex;
+   font-size: 20px;
+   cursor: pointer;
+   gap: 0.1em;
+   margin-top: 10px;
+ }
+
+ .user-comment {
+   display: flex;
+
+   align-items: center;
+   gap: .2em;
+
+   height: 23px;
+ }
+
+
+
+ .add-comment {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: .2em;
+ }
+
+ .add-comment input {
+   width: 80%;
+
+ }
+
+ .add-comment button {
+   width: 20%;
+   padding: 10px;
+   border: 0;
+   border-radius: 5px;
+   margin-top: 0;
+ }
+
+ .follow-someone {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+ }
+
+ .user-follow-box {
+   display: flex;
+   flex-direction: column;
+   width: 167px;
+   height: auto;
+   padding: 10px;
+
+   line-height: 0px;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   gap: 1em;
+ }
+
+ .user-follow-box-img {
+   width: 100px;
+   height: 100px;
+
+ }
+
+ .user-follow-box-img img {
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+ }
+
+ .user-follow-container {
+   display: flex;
+   gap: 1em;
+   flex-wrap: wrap;
+   flex-direction: column;
+   position: absolute;
+   top: 15vh;
+   right: 2vw;
+ }
+
+ .user-follow-container a {
+   text-decoration: none;
+   color: azure;
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+ }
+
+ .userinfo-post-user-username a {
+   text-decoration: none;
+   color: azure;
+
+ }
+
+ .add-post-section {
+   display: flex;
+   flex-direction: column;
+   height: auto;
+   width: 50%;
+   margin: 0 auto;
+   background-color: rgb(21, 21, 21);
+ }
+
+ input,
+ textarea {
+   background-color: rgb(54, 54, 54);
+ }
+
+ .image-input {
+   text-align: center;
+ }
+
+ .image-input input {
+   display: none;
+ }
+
+ .image-input label {
+   display: block;
+   color: #FFF;
+   background: #000;
+   padding: .3rem .6rem;
+   font-size: 115%;
+   cursor: pointer;
+ }
+
+ .image-input label i {
+   font-size: 125%;
+   margin-right: .3rem;
+ }
+
+ .image-input label:hover i {
+   animation: shake .35s;
+ }
+
+ .image-input img {
+   max-width: 175px;
+   display: none;
+ }
+
+ .image-input span {
+   display: none;
+   text-align: center;
+   cursor: pointer;
+ }
+
+ @keyframes shake {
+   0% {
+     transform: rotate(0deg);
+   }
+
+   25% {
+     transform: rotate(10deg);
+   }
+
+   50% {
+     transform: rotate(0deg);
+   }
+
+   75% {
+     transform: rotate(-10deg);
+   }
+
+   100% {
+     transform: rotate(0deg);
+   }
+ }
+
+ .user-info-post-user-left {
+   display: flex;
+   align-items: center;
+   gap: .2em;
+ }
+
+ .userinfo-post-user {
+   display: flex;
+
+   justify-content: space-between;
+ }
+
+ .user-info-post-user-right {
+   cursor: pointer;
+ }
+
+ @media screen and (max-width: 768px) {
+   .user-follow-container {
+     position: initial;
+     flex-direction: row;
+     justify-content: center;
+   }
+ }
+
+
+
+ @media screen and (min-width: 422px) and(max-width: 576px) {
+   .userinfo-post-post-image {
+     width: 362px;
+     height: 427px;
+   }
+ }
+
+ @media only screen and (min-width:300px) and (max-width: 422px) {
+   .userinfo-post-post-image {
+     width: 362px;
+     height: 365px;
+   }
+ }

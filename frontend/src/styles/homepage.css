@@ -1,0 +1,48 @@
+.login-page {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: black; */
+}
+
+.login-page-ctx {
+    background-color: rgb(21, 21, 21);
+    padding: 60px;
+    border-radius: 10px;
+    /* width: 100%; */
+}
+
+.login-page-ctx-ctx {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .login-page-ctx {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login-page-ctx {
+        padding: 20px;
+    }
+}
+
+.login-page-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.login-page-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
